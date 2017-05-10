@@ -239,7 +239,7 @@ console.log(grand_tot);
 	 
 	  console.log("hiii"+sessionStorage.getItem("z"));
 	 var div1=document.createElement("div");
-	 div1.className="modeldiv";
+	 div1.className="modeldiv ";
 	 modal.appendChild(div1);
 	 var img=document.createElement("img");
 	 img.className="modelimg";
@@ -251,7 +251,7 @@ console.log(grand_tot);
 
 	 var input=document.createElement('input');
 	  input.className="modelInput";
-	  input.setAttribute("id", sessionStorage.getItem("z"));
+	  input.setAttribute("id", "t"+sessionStorage.getItem("z"));
 
 	  console.log("input box"+ input.id);
 	  y++;
@@ -280,13 +280,13 @@ console.log(grand_tot);
 
 	 grand_tot=grand_tot-(-price);
 	input.onclick=function(){
-	var inputId = input.id;
-
+	var inputId = (input.id).substr((input.id).length-1);
+console.log("input-id="+inputId);
 	var price = sessionStorage.getItem("price"+inputId);
 	// console.log("price- pujjjjjjjjjjja"+ price);
 	console.log("inputId="+input.id);
 
-	 var qty = document.getElementById(inputId).value;
+	 var qty = document.getElementById(input.id).value;
 	 console.log("qty="+qty);
 	 sessionStorage.setItem("input"+inputId, qty);
 	 console.log("quantity" + sessionStorage.getItem("input"+inputId));

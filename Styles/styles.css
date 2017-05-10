@@ -55,9 +55,13 @@ input{
 	margin: 20px;
 }
 .payment_model{
-	padding-top: 150px;
+	padding-top: 65px;
+	font-weight: 600;
+    color: #04164a;
 }
-
+.model_img_1{
+	display: block!important;
+}
 #tot_item{
 	font-size: 15px;
 	padding: 5px;
@@ -69,7 +73,13 @@ input{
     display: none;
 
 }
-
+.hea{
+	    background: rgba(71, 75, 117, 0.56);
+}
+.ti{
+	    text-shadow: 2px 0px 5px grey;
+    letter-spacing: 8px;
+}
 .modelh3{
 	display: inline-block;
 	font-weight: bold;
@@ -96,6 +106,11 @@ position: relative;
 
 }
 
+.payment_model_header{
+	text-align: center;
+	letter-spacing: 2px;
+
+}
 .mag{
 	border-bottom-width: 4px;
     border-bottom-color: #0D2158;
@@ -108,7 +123,9 @@ position: relative;
 
 
 }
-
+.payment_footer1{
+	background: rgba(71, 75, 117, 0.56);
+}
 .tab{
 
 list-style: none;
